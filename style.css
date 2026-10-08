@@ -589,3 +589,7 @@ button:focus-visible {
 .carte-programme:hover img {
   transform: scale(1.05);
 }
+.logo img {
+    width: 170px;
+    height: auto;
+}
