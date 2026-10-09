@@ -2,9 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta  name="description" content="Découvrez l'histoire, les valeurs et l'équipe d'Élan Fitness, votre salle de sport à Casablanca.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez l'histoire, les valeurs et l'équipe d'Élan Fitness, votre salle de sport à Casablanca.">
   <title>À propos - Élan Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,10 +17,8 @@
       <img src="img/LogoGym.png" alt="Élan Fitness">
     </a>
     <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="burger">
-      <span></span>
-      <span></span>
-      <span></span>
+    <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
     </label>
     <nav>
       <ul class="menu">
@@ -29,78 +30,62 @@
     </nav>
   </div>
 </header>
-  <section id="a-propos" class="section">
+<main>
+  <section class="section" id="a-propos">
     <div class="conteneur apropos-contenu">
       <div class="apropos-texte">
         <p class="sur-titre">Notre histoire et notre mission</p>
-        <h2>Une communauté passionnée au cœur de Casablanca</h2>
-        <p>Fondé avec la conviction que le sport doit être accessible,motivant et bienveillant, Élan Fitness a été pensé comme un lieu d'énergie positive où chacun progresse à son rythme</p>
+        <h1>Une communauté passionnée au cœur de Casablanca</h1>
+        <p>Fondé avec la conviction que le sport doit être accessible, motivant et bienveillant, Élan Fitness a été pensé comme un lieu d'énergie positive où chacun progresse à son rythme.</p>
         <p>Que vous franchissiez pour la première fois la porte d'une salle ou que vous prépariez des objectifs avancés, notre équipe de coachs certifiés vous accompagne au quotidien.</p>
         <ul class="valeurs">
-          <li class="valeur">
-            <div class="icone icone-petite">
-              <img src="img/icone-check.svg" alt="icone-check">
-            </div>
-            <span>Esprit bienveillant</span>
-          </li>
-          <li class="valeur">
-            <div class="icone icone-petite">
-              <img src="img/icone-check.svg" alt="icone-check">
-            </div>
-            <span>Suivi personnalisé</span>
-          </li>
-          <li class="valeur">
-            <div class="icone icone-petite">
-              <img src="img/icone-check.svg" alt="icone-check">
-            </div>
-            <span>Ambiance conviviale</span>
-          </li>
+          <li class="valeur"><span class="icone icone-petite"><img src="img/icone-check.svg" alt=""></span><span>Esprit bienveillant</span></li>
+          <li class="valeur"><span class="icone icone-petite"><img src="img/icone-check.svg" alt=""></span><span>Suivi personnalisé</span></li>
+          <li class="valeur"><span class="icone icone-petite"><img src="img/icone-check.svg" alt=""></span><span>Ambiance conviviale</span></li>
         </ul>
       </div>
-      <img class="apropos-image"src="img/EquipeGym.jpg"alt="L'équipe de coachs d'Élan Fitness réunie dans la salle">
+      <img class="apropos-image" src="img/EquipeGym.jpg" alt="L'équipe de coachs d'Élan Fitness réunie dans la salle">
     </div>
   </section>
- <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-col footer-brand">
-           <a href="index.html" class="logo">
-      <img src="img/FotterPic.png" alt="Élan Fitness" class="logo">
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col footer-brand">
+      <a href="index.html" class="logo">
+        <img src="img/FotterPic.png" alt="Élan Fitness">
       </a>
-            <!-- <h2>Élan Fitness</h2> -->
-            <p>Ton énergie, ton rythme.</p>
-            <p class="footer-description">
-                Dépasse tes limites et avance chaque jour vers une meilleure version de toi-même.
-            </p>
-        </div>
-        <div class="footer-col">
-            <h3>Navigation</h3>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="a-propos.html">À propos</a></li>
-                <li><a href="programmes.html">Programmes</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Nos services</h3>
-            <ul>
-                <li><a href="programmes.html">Musculation</a></li>
-                <li><a href="programmes.html">Cardio</a></li>
-                <li><a href="programmes.html">Yoga</a></li>
-                <li><a href="programmes.html">Boxe Fitness</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Contact</h3>
-            <p>12 rue des Palmiers</p>
-            <p>20000 Casablanca</p>
-            <p>+212 5 22 00 00 00</p>
-            <p>contact@elanfitness.ma</p>
-        </div>
+      <p>Ton énergie, ton rythme.</p>
+      <p class="footer-description">Dépasse tes limites et avance chaque jour vers une meilleure version de toi-même.</p>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 Élan Fitness — Projet pédagogique fictif</p>
+    <div class="footer-col">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
     </div>
+    <div class="footer-col">
+      <h3>Nos services</h3>
+      <ul>
+        <li><a href="programmes.html">Musculation</a></li>
+        <li><a href="programmes.html">Cardio</a></li>
+        <li><a href="programmes.html">Yoga</a></li>
+        <li><a href="programmes.html">Boxe Fitness</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>12 rue des Palmiers</p>
+      <p>20000 Casablanca</p>
+      <p>+212 5 22 00 00 00</p>
+      <p>contact@elanfitness.ma</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Élan Fitness — Projet pédagogique fictif</p>
+  </div>
 </footer>
 </body>
-</html> 
+</html>
