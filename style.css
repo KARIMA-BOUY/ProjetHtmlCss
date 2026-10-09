@@ -594,55 +594,60 @@ textarea:focus-visible {
   .menu li a:hover {
      background-color: #FFF0EA;
      }
-  #menu-toggle:checked ~ nav {
-     display: block;
-     }
-  #menu-toggle:checked + .burger span:nth-child(1) {
-     transform: translateY(9px) rotate(45deg);
-     }
-  #menu-toggle:checked + .burger span:nth-child(2) {
-     opacity: 0;
-     }
-  #menu-toggle:checked + .burger span:nth-child(3) { 
-    transform: translateY(-9px) rotate(-45deg);
-   }
-  .hero {
-     padding: 48px 0 56px; 
-    }
-  .hero-texte h1 {
-     font-size: 32px;
-     }
-  .hero-image, .apropos-image { 
-    height: 250px;
-   }
-  .hero-description { 
-    font-size: 16px;
-   }
-  .boutons {
-     flex-direction: column;
-     }
-  .bouton {
-     width: 100%; 
-    }
-  .cartes, .chiffres, .valeurs {
-     flex-direction: column;
-     }
-  .cartes > .carte {
-     flex: 1 1 auto; width: 100%;
-     }
-  .chiffres {
-     gap: 20px; padding: 24px;
-     }
-  .chiffre + .chiffre {
-     padding-top: 16px; 
-     border-top: 1px solid #E5E7EB;
-      border-left: 0;
-     }
-  .valeur { 
-    flex: 1 1 auto;
-   }
-  .footer-container {
-     grid-template-columns: 1fr;
-      gap: 28px;
-     }
+#menu-toggle:checked ~ nav {
+    display: block;
 }
+#menu-toggle:checked + .burger span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+#menu-toggle:checked + .burger span:nth-child(2) {
+    opacity: 0;
+}
+#menu-toggle:checked + .burger span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+.hero {
+    padding: 50px 0;
+}
+
+.hero-texte h1 {
+    font-size: 32px;
+}
+
+.hero-image,
+.apropos-image {
+    height: 250px;
+}
+.hero-description {
+    font-size: 16px;
+}
+.boutons {
+    flex-direction: column;
+}
+.bouton {
+    width: 100%;
+}
+.cartes,
+.chiffres,
+.valeurs {
+    flex-direction: column;
+}
+.carte {
+    width: 100%;
+}
+.chiffres {
+    gap: 20px;
+    padding: 24px;
+}
+.chiffre + .chiffre {
+    padding-top: 16px;
+    border-top: 1px solid #E5E7EB;
+    border-left: none;
+}
+.valeur {
+    width: 100%;
+}
+.footer-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+} }
