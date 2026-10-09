@@ -590,19 +590,77 @@ button:focus-visible {
     flex: 1 1 50%;
   }
 }
+  #menu-toggle {
+    display: none;
+  }
 @media (max-width: 600px) {
   .conteneur {
     padding: 0 16px;
   }
   .en-tete-contenu {
-    flex-direction: column;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 15px;
   }
-  .menu {
-    flex-direction: row;
-    flex-wrap: wrap;
+  #menu-toggle {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 6px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .burger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #FF6B2C;
+    border-radius: 3px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .en-tete-contenu nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 8px 16px rgba(15, 27, 45, 0.10);
+    z-index: 1000;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 0;
+  }
+  .menu li a {
+    display: block;
+    padding: 14px 24px;
+    border-bottom: none;
+  }
+  .menu li a:hover {
+    background-color: #FFF0EA;
+  }
+  #menu-toggle:checked ~ nav {
+    display: block;
+  }
+  #menu-toggle:checked + .burger span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  #menu-toggle:checked + .burger span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked + .burger span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
   }
   .hero-texte h1 {
     font-size: 32px;
